@@ -6,6 +6,8 @@ A simple one class library under the MIT license designed to help python program
 
 # Usage
 ```python
+from cacbarcode import PDF417Barcode, Code39Barcode
+
 # To parse a barcode, simply do
 barcode = PDF417Barcode("data here")
 
