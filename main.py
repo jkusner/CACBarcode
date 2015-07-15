@@ -158,7 +158,6 @@ class PDF417Barcode(CACBarcode):
         # 2D barcode Version "1" and Version "N" have 88 and 89 chars
         # VN's 89'th char is middle initial
         if len(data) != 88 and len(data) != 89:
-            print("Barcode len: ", len(data))
             raise Exception
 
         # Read the barcode version
@@ -274,7 +273,6 @@ class Code39Barcode(CACBarcode):
         self.data = data
 
         if len(data) != 18:
-            print("Wrong length:", len(data))
             raise Exception
 
         # Only version 1 supported, 18 char length
